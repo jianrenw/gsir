@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- ======================================================================= -->
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<style type="text/css">
+  body {
+    font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+  }
+
+  h1 {
+    font-weight:300;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  #authors td {
+    padding-bottom:5px;
+    padding-top:30px;
+  }
+</style>
+<!-- ======================================================================= -->
+
+<!-- Start : Google Analytics Code -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64069893-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-64069893-6');
+</script>
+<!-- End : Google Analytics Code -->
+
+<script type="text/javascript" src="./resources/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+
+<body>
+      <br>
+      <center><span style="font-size:44px;font-weight:bold;">GSIR: Generalizable 3D Shape Interpretation and Reconstruction</span></center><br/>
+      <table align=center width=800px>
+      <tr>
+        <td align=center width=150px>
+        <center><span style="font-size:22px"><a href="https://jianrenw.github.io/" target="_blank">Jianren Wang</a></span></center></td>
+        <td align=center width=150px>
+        <center><span style="font-size:22px"><a href="https://zfang399.github.io/" target="_blank">Zhaoyuan Fang</a></span></center></td>
+      <tr/>
+      <tr>
+        <td align=center width=200px>
+        <center><span style="font-size:18px">CMU</span></center></td>
+        <td align=center width=200px>
+        <center><span style="font-size:18px">CMU</span></center></td>
+      <tr/>
+      </table>
+      <table align=center width=700px>
+          <tr>
+            <td align=center width=700px><center><span style="font-size:22px"><a href="https://eccv2020.eu/">ECCV 2020</a></span></center></td>
+          <tr/>
+      </table>
+      <table align=center width=700px>
+          <tr>
+            <td align=center width=200px><center><span style="font-size:22px"><a href='http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123580494.pdf'>[Download Paper]</a></span></center></td>
+            <td align=center width=200px><center><span style="font-size:22px"><a href=''>[GitHub Code]</a></span></center></td>
+            <td align=center width=200px><center><span style="font-size:22px"><a href='./resources/slides.pptx'>[Slides]</a></span></center></td>
+            <td align=center width=200px><center><span style="font-size:22px"><a href=''>[Poster]</a></span></center></td>
+          <tr/>
+      </table><br/>
+
+      <table align=center width=300px>
+      <tr><td align=center width=300px>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/cAWjk4U7ehs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </td></tr>
+      </table>
+      <br><hr>
+
+      <div style="width:800px; margin:0 auto; text-align=center">
+        3D shape interpretation and reconstruction are closely related to each other but have long been studied separately and often end up with priors that are highly biased towards the training classes. In this paper, we present an algorithm, \textit{Generalizable 3D Shape Interpretation and Reconstruction (GSIR)}, designed to jointly learn these two tasks to capture generic, class-agnostic shape priors for a better understanding of 3D geometry. We propose to recover 3D shape structures as cuboids from partial reconstruction and use the predicted structures to further guide full 3D reconstruction. The unified framework is trained simultaneously offline to learn a generic notion and can be fine-tuned online for specific objects without any annotations. Extensive experiments on both synthetic and real data demonstrate that introducing 3D shape interpretation improves the performance of single image 3D reconstruction and vice versa, achieving the state-of-the-art performance on both tasks for objects in both seen and unseen categories.
+      </div>
+      <br><hr>
+      
+      <center><h1>Overview of the Algorithm</h1></center>
+      <div style="width:800px; margin:0 auto; text-align=center">
+        Our whole model consists of four learnable functions connected by five deterministic projection functions.
+      </div><br/>
+      <table align=center width=650px>
+        <p style="margin-top:4px;"></p>
+        <tr><td width=500px>
+          <center><a href="./resources/pipeline.jpg"><img src = "./resources/pipeline.jpg" width=700px></img></a><br></center>
+        </td></tr>
+      </table>
+      <br/><hr>
+      
+      <table align=center width=850px>
+        <center><h1>Paper and Bibtex</h1></center>
+        <tr>
+        <td width=250px align=left>
+        <!-- <p style="margin-top:4px;"></p> -->
+        <a href=''><img class="layered-paper-big" style="height:150px" src="./resources/paper_shot.JPG"/></a>
+        </td>
+        <td width=50px align=center>
+        </td>
+        <td width=550px align=left>
+        <!-- <p style="margin-top:4px;"></p> -->
+        <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Jianren Wang, Zhaoyuan Fang.<br/> <b>GSIR: Generalizable 3D Shape Interpretation and Reconstruction<br/></b> In <i>ECCV</i> 2020.</span></p>
+        <!-- <p style="margin-top:20px;"></p> -->
+        <span style="font-size:20pt"><a shape="rect" href="javascript:togglebib('alignnet_bib')" class="togglebib">[Bibtex]</a></span>
+        <span style="font-size:20pt"><a href='http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123580494.pdf'>[Paper]</a></span>
+        <span style="font-size:20pt"><a href=''>[ArXiv]</a></span>
+        </td>
+        </tr>
+        <tr>
+        <td width=250px align=left>
+        </td>
+        <td width=50px align=center>
+        </td>
+        <td width=550px align=left>
+          <div class="paper" id="alignnet_bib">
+<pre xml:space="preserve">
+@inproceedings{wang2020gsir,
+    title={GSIR: Generalizable 3D Shape Interpretation and Reconstruction},
+    author={Wang, Jianren and Fang, Zhaoyuan},
+    booktitle={European Conference on Computer Vision},
+    pages={498--514},
+    year={2020},
+    organization={Springer}
+}</pre>
+          </div>
+          </td>
+          </tr>
+      </table>
+    <br><hr>
+
+    <table align=center width=800px>
+      <tr><td width=800px><left>
+      <center><h1>Acknowledgements</h1></center>
+      We would like to thank members of the CMU Center for Perceptual Computing and Learning for fruitful discussions. This work was supported by PanGU Young Investigator Award to JW.<br>
+      </left></td></tr>
+    </table>
+  <br><br>
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+</body>
+</html>
